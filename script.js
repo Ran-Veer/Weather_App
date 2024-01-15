@@ -11,7 +11,7 @@ const pressure = document.getElementById("pressure");
 const getData = async (event) => {
     event.preventDefault();
     const city = inputBox.value;
-    const fetchData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${'e9b0263e8663e97a7f230f4705ec9c3c'}`);
+    const fetchData = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${'82c2e29dcc81d958b4bd9eb6b6934f8d'}`);
     const data = await fetchData.json();
     orgData = data;
     console.log(orgData);
