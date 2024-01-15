@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
@@ -12,7 +14,7 @@ body {
 .weather-container{
     width:70%;
     margin:10rem auto 0 auto;
-    height: 500px;
+    /* height: 500px; */
     background-color: transparent;
     backdrop-filter: blur(5px);
     border-radius: 15px;
@@ -57,4 +59,45 @@ body {
     font-size: 1.2rem;
     color: #fff;
     cursor: pointer;
+}
+main .weather-container .weather-information{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    margin: 3rem 0 0 0;
+}
+main .weather-container .weather-information .temp-section{
+    text-align: center;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+main .weather-container .weather-information .temp-section h2{
+  color: #fff;
+  font-size: 2.5rem;
+}
+main .weather-container .weather-information .temp-section h1{
+    color: rgba(85,228,224,1);
+    font-size: 4rem;
+}
+main .weather-container .weather-information .details-section{
+    /* border: 1px solid rgb(90, 207, 90); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+    width: 100%;
+}
+main .weather-container .weather-information .details-section p{
+    font-size: 1.2rem;
+    color: #fff;
+    width:80%;
+    /* border: 1px solid greenyellow */
+
 }
