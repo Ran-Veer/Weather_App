@@ -3,3 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.weather-container{
+    width:70%;
+    margin:10rem auto 0 auto;
+    height: 500px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    /* border: 1px solid red; */
+    box-shadow: inset 1px 1px 100px 1px rgba(75,68,224,0.74),
+                1px 1px 20px 5px rgba(64,198,238,1);
+
+}
+.weather-container .search-bar-container .search-bar form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.weather-container .search-bar-container .search-bar form input[type="text"]{
+    /* border: 1px solid red; */
+    width: 40%;
+    margin:1rem auto auto auto;
+    outline: none;
+    border: none;
+    padding: .5rem .2rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+    box-shadow: inset -1px -1px 10px 1px rgba(75,68,224,0.5);
+}
+.weather-container .search-bar-container .search-bar form input::placeholder{
+    color: #fff;
+    text-align: center;
+}
+.weather-container .search-bar-container .search-bar form input[type="submit"]{
+    border:none;
+    background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );;
+    border-radius: 10px;
+    width:20%;
+    margin: auto;
+    outline: none;
+    border: none;
+    padding: .5rem .2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
