@@ -27,20 +27,24 @@ body {
 }
 .weather-container .search-bar-container .search-bar form{
     display: flex;
-    flex-direction: column;
-    gap: .5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
 }
 .weather-container .search-bar-container .search-bar form input[type="text"]{
     /* border: 1px solid red; */
-    width: 40%;
-    margin:1rem auto auto auto;
+    width: 20%;
+    /* margin:1rem auto auto auto; */
+    margin-top: 2rem;
     outline: none;
     border: none;
-    padding: .5rem .2rem;
+    padding: .5rem .5rem;
     font-size: 1.2rem;
     background-color: transparent;
     backdrop-filter: blur(20px);
     color: #fff;
+    border-radius: 15px 0px 0px 15px;
     box-shadow: inset -1px -1px 10px 1px rgba(75,68,224,0.5);
 }
 .weather-container .search-bar-container .search-bar form input::placeholder{
@@ -50,9 +54,10 @@ body {
 .weather-container .search-bar-container .search-bar form input[type="submit"]{
     border:none;
     background-image: linear-gradient( 65.9deg,  rgba(85,228,224,1) 5.5%, rgba(75,68,224,0.74) 54.2%, rgba(64,198,238,1) 55.2%, rgba(177,36,224,1) 98.4% );;
-    border-radius: 10px;
-    width:20%;
-    margin: auto;
+    border-radius: 0px 15px 15px 0;
+    width:8%;
+    /* margin: auto; */
+    margin-top: 2rem;
     outline: none;
     border: none;
     padding: .5rem .2rem;
@@ -75,7 +80,12 @@ main .weather-container .weather-information{
 main .weather-container .weather-information .temp-section{
     text-align: center;
     /* border: 1px solid red; */
-    width: 100%;
+    width: 25%;
+    height: 50%;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: inset -1px -1px 10px 1px rgba(68, 219, 224, 0.837);
+    backdrop-filter: blur(15px);
 }
 main .weather-container .weather-information .temp-section h2{
   color: #fff;
